@@ -5,11 +5,9 @@ from flask import render_template
 from flask_restful import reqparse
 
 app = Flask(__name__)
-# api = Api(app)
+api = Api(app)
 
-@app.route('/page')
-def index():
-    return render_template('page.html')
+# create the flask
 
 app.run(debug=True, host='0.0.0.0', port=5000)
 
